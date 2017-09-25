@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+  <h1>todo</h1>
+   
+   
+    <ul>
+      <li
+        todo="todo"
+        ng-repeat="todo in $ctrl.todos track by $index"
+        ng-click="$ctrl.removeTodo($index)"
+        >{{todo.task}}  </li>
+    </ul>
+
+
+</body>
+</html>
