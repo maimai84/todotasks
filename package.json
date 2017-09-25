@@ -1,0 +1,23 @@
+{
+  "name": "todotasks",
+  "version": "1.0.0",
+  "description": "todo task is very important for every persone\r it organize your time \r it orgnize your work\r it orgnize your life\r  it easy and simple\r  it helpfull espcially  for who are busy\r  and for who dont remember",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maimai84/todotasks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maimai84/todotasks/issues"
+  },
+  "homepage": "https://github.com/maimai84/todotasks#readme",
+  "dependencies": {
+    "express": "^4.15.5",
+    "jquery": "^3.2.1"
+  }
+}
