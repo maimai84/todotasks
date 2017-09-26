@@ -1,22 +1,37 @@
 angular.module('app', [])
-  .component('todoList', {
-    controller: function() {
-      this.todos = [];
-     
-         
-     
-   
-      this.addTodo = () => {
-        this.todos.push(this.newTodo);
-        this.newTodo = "";
-      };
-      this.removeTodo = (index) => {
-        this.todos.splice(index, 1);
-      }
-bindings:{
-	todos:'<'
-}
+.component('todoList', {
+  controller: function() {
+    this.todos = ["swim"];
 
-    },
-templetUrl:`templet/app.html`
-}
+
+      this.addTodo = () => {
+      this.todos.push(this.newTodo);
+      this.newTodo = "";
+      $.ajax({
+        method: "POST",
+        url: "http:/localhost:3000",
+        data: {task: $('#i').val() }
+      })
+      .done(function( msg ) {
+        alert( "Data Saved: " + msg );
+      });
+      $.ajax({
+        method: "GEt",
+        url: "localhost:3000",
+      })
+      .done(function( todos) {
+        alert(  todos );
+      });
+
+
+    };
+    
+    bindings:{
+     todos:'<'
+   }
+
+ },
+ templetUrl:`templet/app.html`
+})
+
+
