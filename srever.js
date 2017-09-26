@@ -15,7 +15,7 @@ app.get('/todo', function (req, res) {
 })
 
 app.post("/", (req, res) => {
-  var myData = new todo(req.body);
+  var myData = new data.temp(req.body);
   myData.save()
     .then(item => {
       res.send("item saved to database");
