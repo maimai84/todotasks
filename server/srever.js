@@ -5,7 +5,7 @@ var path=require('path')
 var mongoose = require('mongoose');
 
 app.get('/', function (req, res) {
-    res.sendFile('list.html',{root:path.join(__dirname,'./client/templels')})
+    res.sendFile('app.html',{root:path.join(__dirname,'./cleint/templet')})
   // res.send("hlowwwwwwwwwwwww")
 })
 
