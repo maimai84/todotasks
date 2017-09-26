@@ -1,7 +1,7 @@
 angular.module('app', [])
   .component('todoList', {
     controller: function() {
-      this.todos = [{task:"run"}];
+      this.todos = [];
      
          
      
@@ -18,5 +18,5 @@ bindings:{
 }
 
     },
-templetUrl:`templels/app.html`
+templetUrl:`templet/app.html`
 }

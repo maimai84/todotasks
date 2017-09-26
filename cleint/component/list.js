@@ -18,5 +18,5 @@ angular.module('app', [])
       
     
     },
-templetUrl:`templels/list.html`
+templetUrl:`templet/list.html`
 }

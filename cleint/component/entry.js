@@ -3,5 +3,6 @@ angular.module('app', [])
     bindings: {
        todo: '<'
   },
-templetUrl:`templels/entry.html`
+  
+templetUrl:`templet/entry.html`
 }
